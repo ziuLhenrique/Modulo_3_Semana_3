@@ -1,0 +1,76 @@
+Exercícios 
+1) Existem várias situações no fluxo de trabalho com Git onde podemos encontrar conflitos durante o merge de branchs.
+Na grande maioria dos casos, poucas alterações no código podem resolver estes conflitos, sendo então necessário atualizar a branch em questão.
+Qual a sequência de passos deve ser seguida após um comando git merge falhar devido a conflitos?
+
+R: Depoi de resolver o conflito manualmente, da um git status para verificar,
+   depois um git add. para adicionar, depois mais um git status para verificar,
+   não é obrigatório, depois um git commit, depois um git status, e um git log --oneline.
+   OBS: (ou pode também usar o rebase, dependendo da situação.)
+__________________________________________________________________________________________________________________________________________________________________________
+
+2) Luizinho estava trabalhando em uma melhoria em seu código utilizando a 
+branch feature/ABC123  quando colegas de trabalho lhe informaram de um
+bug em produção que precisa ser corrigido o quanto antes. O bug em questão
+estava no arquivo hello.py na branch main do repositório. Qual sequência de
+comandos git, Luizinho deve executar para corrigir o bug e voltar ao seu
+trabalho? Lembre-se que a empresa em que Luizinho trabalha segue à risca o GitFlow.
+
+R: da um git checkout hello.py resolve o bug, depois um git checkout main,e um 
+   git merge hello.py, e git push origin main.
+  
+ _________________________________________________________________________________________________________________________________________________________________________
+ 
+ 3) No fluxo de trabalho de software a principal forma de sincronização 
+ de códigos é por meio de ferramentas de versionamento. A mais popular
+ delas é amplamente difundida e é conhecida como git. Tendo em vista os
+ temas abordados em aula, descreva a funcionalidade e exemplifique os
+ comando git pull e git push 
+ 
+ R: O git pull irá buscar as últimas alterações no repositório remoto
+    e aplicá-las localmente,
+    
+    o comando git push irá pegar todas as alterações e enviar para o
+    repositório remoto.
+_______________________________________________________________________________________________________________________________________________________________________
+
+4) Realize uma pesquisa sobre as diversas plataformas de versionamento
+com git, escolha duas e realize um comparativo com o GitHub avaliando as 
+semelhanças, diferenças, vantagens e desvantagens para o desenvolvimento 
+de software.
+                   
+                       (GITLAB)
+R:SEMELHANÇA GITLAB:Tanto GitLab quanto GitHub são plataformas de desenvolvimento
+com um forte foco no sistema Git de código aberto para controle distribuído 
+de versões. 87,2% dos desenvolvedores entrevistados confiam em Git para o 
+controle de versão, colaboração e implementação mais suave. 
+
+AS DIFERENÇAS:O GitLab fornece o recurso de navegação no repositório. O GitHub 
+permite ao usuário navegar pela usabilidade.O GitLab fornece ao usuário a 
+visualização de gráficos de desenvolvimento do projeto. O GitHub ainda não
+tem esse recurso, mas eles podem verificar o histórico de commits.
+
+VANTAGENS E DESVANTAGENS :Para os repositórios privados auto-hospedados,
+o GitLab é a melhor escolha. ...
+Ambas as opções são ótimas para projetos de código aberto, com o GitLab 
+oferecendo recursos premium gratuitamente e o GitHub oferecendo acesso
+a um grupo maior de desenvolvedores de código aberto ativos.
+
+                  
+                        (BITBUCKT)
+SEMELHANÇA BITBUCKET:Não achei uma posivel semelhança na pesquisa, mais
+no meu ponto de vista os dois são boms.
+
+DIFERENÇAS:A maior diferença entre Bitbucket e GitHub é que o primeiro é usado
+principalmente para repositórios privados, enquanto o segundo é a opção para
+repositórios públicos. Isto não significa que você não pode usar GitHub para
+repositórios privados e vice versa, apenas que essas são as especialidades das 
+duas plataformas
+
+VANTAGENS E DESVANTAGENS:O Bitbucket oferece repositórios privados e públicos
+ilimitados, mas limita o número de usuários em seu plano gratuito a cinco.
+O GitHub oferece usuários ilimitados e repositórios públicos, mas não fornece
+repositórios privados em seu plano gratuito.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
